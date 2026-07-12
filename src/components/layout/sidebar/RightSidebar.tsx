@@ -78,7 +78,7 @@ export default function RightSidebar() {
         <section>
           <h3 className="mb-2 flex items-center gap-2 px-3 text-sm font-semibold text-foreground-muted">
             <NotificationsActiveRoundedIcon fontSize="small" />
-            Hot Notifications
+            Notifications
           </h3>
 
           <div className="space-y-1">
