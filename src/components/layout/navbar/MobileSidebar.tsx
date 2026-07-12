@@ -106,7 +106,7 @@ export default function MobileSidebar() {
         <Dialog.Overlay className="fixed inset-0 z-40 bg-black/50 data-[state=open]:animate-in data-[state=closed]:animate-out" />
 
         {/* Sidebar */}
-        <Dialog.Content className="fixed left-0 top-0 z-50 flex h-screen w-80 max-w-[85vw] flex-col bg-background-surface shadow-xl outline-none transition-transform duration-300 data-[state=closed]:-translate-x-full data-[state=open]:translate-x-0">
+        <Dialog.Content className="fixed left-0 top-0 z-50 flex inset-y-0 w-80 max-w-[85vw] flex-col bg-background-surface shadow-xl outline-none transition-transform duration-300 data-[state=closed]:-translate-x-full data-[state=open]:translate-x-0">
           {/* Header */}
           {/*<div className="flex items-center justify-between border-b border-outline/20 p-4">*/}
           {/*  <Dialog.Title className="text-lg font-semibold">Horizon</Dialog.Title>*/}
