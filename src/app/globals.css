@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-background: var(--background);
+    --color-background-surface: var(--background-surface);
+    --color-background-elevated: var(--background-elevated);
+
+    --color-foreground: var(--foreground);
+    --color-foreground-muted: var(--foreground-muted);
+
+    --color-foreground-surface: var(--foreground-surface);
+    --color-foreground-elevated: var(--foreground-elevated);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    /* Border */
+    --color-border: var(--border);
+    --color-border-muted: var(--border-muted);
+    --color-border-strong: var(--border-strong);
+
+    /* Alerts */
+    --color-alert-info: var(--alert-info);
+    --color-alert-info-foreground: var(--alert-info-foreground);
+
+    --color-alert-success: var(--alert-success);
+    --color-alert-success-foreground: var(--alert-success-foreground);
+
+    --color-alert-warning: var(--alert-warning);
+    --color-alert-warning-foreground: var(--alert-warning-foreground);
+
+    --color-alert-error: var(--alert-error);
+    --color-alert-error-foreground: var(--alert-error-foreground);
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    html {
+        color-scheme: light;
+    }
+
+    html.dark {
+        color-scheme: dark;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+        @apply bg-primary text-primary-foreground;
+    }
+
+    hr {
+        @apply border-border;
+    }
+}
+
+:root {
+    /* Background */
+    --background: hsl(210 20% 96%);
+    --background-surface: hsl(210 20% 98%);
+    --background-elevated: hsl(0 0% 100%);
+
+    /* Text */
+    --foreground: hsl(222 47% 11%);
+    --foreground-surface: hsl(222 47% 11%);
+    --foreground-elevated: hsl(222 47% 11%);
+    --foreground-muted: hsl(215 16% 47%);
+
+    /* Brand */
+    --primary: hsl(217 91% 60%);
+    --primary-foreground: hsl(0 0% 100%);
+
+    /* Border */
+    --border: hsl(215 18% 88%);
+    --border-muted: hsl(215 18% 92%);
+    --border-strong: hsl(215 18% 82%);
+
+    /* Info */
+    --alert-info: hsl(200 98% 48%);
+    --alert-info-foreground: hsl(0 0% 100%);
+    --alert-info-muted: hsl(200 90% 40%);
+
+    /* Success */
+    --alert-success: hsl(142 72% 45%);
+    --alert-success-foreground: hsl(0 0% 100%);
+    --alert-success-muted: hsl(142 72% 36%);
+
+    /* Warning */
+    --alert-warning: hsl(38 92% 50%);
+    --alert-warning-foreground: hsl(30 15% 10%);
+    --alert-warning-muted: hsl(38 92% 42%);
+
+    /* Error */
+    --alert-error: hsl(0 84% 60%);
+    --alert-error-foreground: hsl(0 0% 100%);
+    --alert-error-muted: hsl(0 70% 48%);
+}
+
+.dark {
+    /* Background */
+    --background: hsl(222 20% 7%);
+    --background-surface: hsl(222 18% 10%);
+    --background-elevated: hsl(222 17% 13%);
+
+    /* Text */
+    --foreground: hsl(210 20% 96%);
+    --foreground-surface: hsl(210 20% 96%);
+    --foreground-elevated: hsl(210 20% 96%);
+    --foreground-muted: hsl(215 15% 65%);
+
+    /* Brand */
+    --primary: hsl(217 91% 65%);
+    --primary-foreground: hsl(0 0% 100%);
+
+    /* Border */
+    --border: hsl(222 15% 20%);
+    --border-muted: hsl(222 15% 16%);
+    --border-strong: hsl(222 15% 28%);
+
+    /* Info */
+    --alert-info: hsl(200 98% 58%);
+    --alert-info-foreground: hsl(0 0% 100%);
+    --alert-info-muted: hsl(200 90% 48%);
+
+    /* Success */
+    --alert-success: hsl(142 70% 50%);
+    --alert-success-foreground: hsl(0 0% 100%);
+    --alert-success-muted: hsl(142 70% 40%);
+
+    /* Warning */
+    --alert-warning: hsl(38 92% 58%);
+    --alert-warning-foreground: hsl(30 15% 10%);
+    --alert-warning-muted: hsl(38 92% 48%);
+
+    /* Error */
+    --alert-error: hsl(0 84% 65%);
+    --alert-error-foreground: hsl(0 0% 100%);
+    --alert-error-muted: hsl(0 70% 55%);
+}
