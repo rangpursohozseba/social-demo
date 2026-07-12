@@ -29,7 +29,7 @@ const businesses = ["Rangpur IT Solution", "Dream Furniture", "City Mart", "Smar
 
 export default function RightSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="hidden md:block">
       <div className="flex flex-col pr-2">
         {/* Sponsored */}
         <section>

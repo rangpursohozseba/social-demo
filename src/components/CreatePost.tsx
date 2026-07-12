@@ -2,7 +2,7 @@ import { ImageRounded, MoodRounded, VideocamRounded } from "@mui/icons-material"
 
 export function CreatePost() {
   return (
-    <div className="mb-4 rounded-2xl border border-outline/20 bg-background-elevated shadow-sm">
+    <div className="mb-2 md:mb-4 md:rounded-2xl md:border border-outline/20 bg-background-elevated shadow-sm">
       <div className="flex items-center gap-3 p-4">
         <div className="h-11 w-11 rounded-full bg-primary/20" />
 

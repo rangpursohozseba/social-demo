@@ -19,9 +19,9 @@ const navItems = [
   { icon: NotificationsRoundedIcon, active: false },
 ];
 
-export default function Navbar() {
+export default function DesktopNavbar() {
   return (
-    <header className="sticky top-0 z-50 h-16 border-b border-outline/20 bg-background-surface">
+    <header className="hidden md:block sticky top-0 z-50 h-16 border-b border-outline/20 bg-background-surface">
       <div className="flex h-full w-full items-center justify-between px-6">
         {/* Left */}
         <div className="flex items-center gap-4">

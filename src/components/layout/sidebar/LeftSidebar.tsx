@@ -101,7 +101,7 @@ const sections = [
 
 export default function LeftSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="hidden md:block">
       <div className="space-y-6">
         {sections.map((section, index) => (
           <div key={section.title}>

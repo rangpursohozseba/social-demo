@@ -10,8 +10,8 @@ export default function Page() {
       <LeftSidebar />
 
       {/* Feed */}
-      <section className="min-w-0 flex-1 pt-4">
-        <div className="mx-auto max-w-2xl space-y-4">
+      <section className="min-w-0 flex-1 md:pt-4">
+        <div className="mx-auto max-w-2xl">
           <CreatePost />
           <PostList />
         </div>

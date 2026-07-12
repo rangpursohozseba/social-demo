@@ -70,11 +70,11 @@ export function PostList() {
   console.log(posts);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-1 md:space-y-4">
       {posts.map((post) => (
         <article
           key={post.id}
-          className="overflow-hidden rounded-2xl border border-outline/20 bg-background-elevated shadow-sm"
+          className="overflow-hidden md:rounded-2xl md:border border-outline/20 bg-background-elevated shadow-sm"
         >
           {/* Header */}
           <div className="flex items-center gap-3 p-4">
